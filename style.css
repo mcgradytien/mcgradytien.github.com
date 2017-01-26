@@ -11,6 +11,10 @@
     padding: 0px;
 }
 
+body{
+	margin: 0px;
+}
+
 clearfix {
     overflow: auto;
 }
@@ -34,7 +38,7 @@ section {
     width: 100%;
 }
 
-footer{
+footer {
     position: absolute;
     height: 100px;
     width: 100%;
@@ -168,6 +172,4 @@ footer{
     }
 }
 
-@media screen and (max-width: 1200px) {
-    
-}
+@media screen and (max-width: 1200px) {}
