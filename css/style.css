@@ -1,192 +1,274 @@
-@charset "UTF-8";
-
-/**
+    @charset "UTF-8";
+    /**
  * @mcgradytien (mcgradytien@163.com)
  * @date    2017-01-08 17:15:28
  * @version 0.0.1
  */
- 
-/* @font-face {font-family: 'webfont';
-  src: url('//at.alicdn.com/t/w5k4l8sxxomkj4i.eot'); IE9
-  src: url('//at.alicdn.com/t/w5k4l8sxxomkj4i.eot?#iefix') format('embedded-opentype'), IE6-IE8
-  url('//at.alicdn.com/t/w5k4l8sxxomkj4i.woff') format('woff'), chrome、firefox
-  url('//at.alicdn.com/t/w5k4l8sxxomkj4i.ttf') format('truetype'),  chrome、firefox、opera、Safari, Android, iOS 4.2+
-  url('//at.alicdn.com/t/w5k4l8sxxomkj4i.svg#NotoSansHans-DemiLight') format('svg'); iOS 4.1-
-}
-
-.web-font{
-    font-family:"webfont" !important;
-    font-size:16px;font-style:normal;
-    -webkit-font-smoothing: antialiased;
-    -webkit-text-stroke-width: 0.2px;
-    -moz-osx-font-smoothing: grayscale;
-} */
-
-* {
-    font-family:PingFang SC,Microsoft Yahei;
-    padding: 0px;
-}
-
-body{
-	margin: 0px;
-}
-
-clearfix {
-    overflow: auto;
-}
-
-header {
-    background-color: #F7F7F7;
-    height: 80px;
-    width: 100%;
-    position: fixed;
-    z-index: 9999;
-}
-
-#header-contact span img {
-    width: 20px;
-    margin: 0 15px -4px 15px;
-}
-
-section {
-    position: absolute;
-    height: 0px;
-    width: 100%;
-}
-
-footer {
-    position: absolute;
-    height: 100px;
-    width: 100%;
-    top: 4600px;
-    background-color: #ffffff;
-}
-
-@media only screen and (min-width: 1000px) {
-    #header-name {
+    
+    * {
+        font-family: PingFang SC, Microsoft Yahei;
+    }
+    
+    body {
+        margin: 0px;
+    }
+    
+    clearfix {
+        overflow: auto;
+    }
+    /* 公用样式 */
+    
+    header {
+        height: 80px;
+        line-height: 80px;
+        width: 100%;
+        position: fixed;
+        z-index: 9999;
+        background-color: #F7F7F7;
+    }
+    
+    #header-contact span img {
+        width: 20px;
+        margin: 0 15px -4px 15px;
+    }
+    
+    section {
         position: absolute;
-        width: 30%;
-        font-size: 18px;
-        height: 40px;
-        line-height: 40px;
-        padding-left: 10%;
-        margin-top: 20px;
+        height: 0px;
+        width: 100%;
     }
-    #header-contact {
+    
+    footer {
         position: absolute;
-        font-size: 18px;
-        height: 40px;
-        right: 5%;
-        text-align: right;
-        line-height: 40px;
-        margin-top: 20px;
+        height: 100px;
+        width: 100%;
+        top: 4600px;
+        background-color: #ffffff;
     }
-    section div div {
-        position: absolute;
-    }
-    section #profile {
-        width: 50%;
-        padding-left: 10%;
-        margin-top: 80px;
-    }
-    section #avatar {
-        right: 5%;
-        width: 320px;
-        height: 320px;
-        border-radius: 50%;
-        background-color: #D8D8D8;
-        margin-top: 200px;
-    }
-    #profile p {
-        font-size: 22px;
-        line-height: 30px;
-    }
-    #profile-details {
-        margin-top: 200px;
-    }
-    #profile-details a {
-        text-decoration: none;
-        margin-top: 300px;
-        color: #0271C9;
-    }
+    
     #personal-experience {
         padding-top: 900px;
         width: 100%;
     }
-    #exper1 {
-        padding-left: 10%;
-        margin-top: 100px;
-    }
-    #exper2 {
-        padding-left: 10%;
-        margin-top: 300px;
-    }
-    #exper3 {
-        padding-left: 10%;
-        margin-top: 500px;
-    }
+    
     #personal-experience .exper {
         width: 88%;
     }
-    #personal-experience .exper div {
-        float: left;
-        margin-top: 50px;
-        width: 20%;
-    }
-    #personal-experience .exper .details {
-        float: right;
-        right: 10%;
-        width: 50%;
-    }
-    #personal-experience .exper div span {
-        display: inline-block;
-        font-size: 22px;
-        line-height: 40px;
-    }
-    #personal-project {
-        margin-top: 1000px;
-        margin-left: 10%;
-    }
-    #personal-project .project {
-        width: 88%;
-    }
-    #project1 {
+    
+    #exper1 {
         margin-top: 100px;
     }
+    
+    #exper2 {
+        margin-top: 300px;
+    }
+    
+    #exper3 {
+        margin-top: 500px;
+    }
+    
+    #personal-project {
+        margin-top: 1000px;
+    }
+    
+    #personal-experience .exper {
+        width: 88%;
+    }
+    
+    #personal-experience .exper div {
+        float: left;
+    }
+    
+    #personal-experience .exper .details {
+        float: right;
+        right: 5%
+    }
+    
+    #personal-experience .exper div span {
+        display: inline-block;
+    }
+    
+    #project1 {
+        margin-top: 0px;
+    }
+    
     #project2 {
         margin-top: 1000px;
     }
+    
     #project3 {
         margin-top: 1900px;
     }
+    
+    #personal-project .project {
+        width: 88%;
+    }
+    
     #personal-project .project .project-details {
         float: left;
         width: 50%;
     }
-    #personal-project .project div .project-title {
-        font-size: 32px;
+    
+    @media only screen and (min-width: 960px) {
+        #header-name {
+            position: absolute;
+            font-size: 18px;
+            line-height: 80px;
+            padding-left: 10%;
+        }
+        #header-contact {
+            position: absolute;
+            font-size: 18px;
+            right: 5%;
+            text-align: right;
+            line-height: 80px;
+        }
+        section div div {
+            position: absolute;
+        }
+        section #profile {
+            width: 40%;
+            padding-left: 10%;
+            margin-top: 80px;
+        }
+        section #avatar {
+            right: 5%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #D8D8D8;
+            margin-top: 200px;
+        }
+        /*个人简介*/
+        #profile #name {
+            font-size: 44px;
+            line-height: 120px;
+        }
+        #profile p {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        #profile-details {
+            margin-top: 150px;
+        }
+        #profile-details a {
+            text-decoration: none;
+            color: #0271C9;
+        }
+        /*个人经历*/
+        #personal-experience .exper {
+            padding-left: 10%;
+        }
+        #personal-experience .exper div span {
+            display: inline-block;
+            font-size: 22px;
+            line-height: 40px;
+        }
+        /*项目经验*/
+        #personal-project {
+            margin-left: 10%;
+        }
+        #personal-project .project div .project-title {
+            font-size: 32px;
+        }
+        #personal-project .project div p {
+            font-size: 22px;
+            line-height: 30px;
+        }
+        #personal-project .project div textarea {
+            font-size: 18px;
+            line-height: 22px;
+            width: 50%;
+            height: 100px;
+            padding: 20px;
+        }
+        #personal-project .project .project-avatar {
+            margin-top: 35px;
+            float: right;
+            width: 300px;
+            height: 300px;
+            background: #D8D8D8;
+            right: 10%;
+        }
     }
-    #personal-project .project div p {
-        font-size: 22px;
-        line-height: 30px;
+    
+    @media only screen and (max-width: 960px) {
+        #header-name {
+            position: absolute;
+            text-align: left;
+            left: 5%;
+            font-weight: bold;
+        }
+        #header-contact {
+            position: absolute;
+            text-align: right;
+            right: 5%;
+        }
+        section div div {
+            position: absolute;
+        }
+        section #profile {
+            width: 40%;
+            padding-left: 5%;
+            margin-top: 80px;
+        }
+        section #avatar {
+            right: 5%;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #D8D8D8;
+            margin-top: 200px;
+        }
+        /*个人简介*/
+        #profile #name {
+            font-size: 38px;
+            line-height: 120px;
+        }
+        #profile p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        #profile-details {
+            margin-top: 150px;
+        }
+        #profile-details a {
+            text-decoration: none;
+            color: rgb(2, 113, 201);
+        }
+        /*个人经历*/
+        #personal-experience .exper {
+            padding-left: 5%;
+        }
+        #personal-experience .exper div span {
+            display: inline-block;
+            font-size: 18px;
+            line-height: 40px;
+        }
+        /*项目经历*/
+        #personal-project {
+            margin-left: 5%;
+        }
+        #personal-project .project div .project-title {
+            font-size: 24px;
+        }
+        #personal-project .project div p {
+            font-size: 18px;
+            line-height: 30px;
+        }
+        #personal-project .project div textarea {
+            font-size: 16px;
+            line-height: 22px;
+            width: 50%;
+            height: 100px;
+            padding: 20px;
+        }
+        #personal-project .project .project-avatar {
+            margin-top: 35px;
+            float: right;
+            width: 240px;
+            height: 240px;
+            background: #D8D8D8;
+            right: 10%;
+        }
     }
-    #personal-project .project div textarea {
-        font-size: 18px;
-        line-height: 22px;
-        width: 50%;
-        height: 100px;
-        padding: 20px;
-    }
-    #personal-project .project .project-avatar {
-        margin-top: 35px;
-        float: right;
-        width: 300px;
-        height: 300px;
-        background: #D8D8D8;
-        right: 10%;
-    }
-}
-
-@media screen and (max-width: 1200px) {
-	
-}
