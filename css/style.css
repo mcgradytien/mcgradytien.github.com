@@ -13,7 +13,7 @@
         margin: 0px;
     }
     
-    clearfix {
+    .sclearfix {
         overflow: auto;
     }
     /* 公用样式 */
@@ -46,6 +46,10 @@
         background-color: #ffffff;
     }
     
+    #personal-info {
+        padding-left: 5%;
+    }
+    
     #personal-experience {
         padding-top: 900px;
         width: 100%;
@@ -67,10 +71,6 @@
         margin-top: 500px;
     }
     
-    #personal-project {
-        margin-top: 1000px;
-    }
-    
     #personal-experience .exper {
         width: 88%;
     }
@@ -88,6 +88,11 @@
         display: inline-block;
     }
     
+    #personal-project {
+        margin-top: 1000px;
+        padding-left: 5%;
+    }
+    
     #project1 {
         margin-top: 0px;
     }
@@ -101,7 +106,7 @@
     }
     
     #personal-project .project {
-        width: 88%;
+        width: 90%;
     }
     
     #personal-project .project .project-details {
@@ -109,7 +114,7 @@
         width: 50%;
     }
     
-    @media only screen and (min-width: 960px) {
+    @media screen and (min-width: 960px) {
         #header-name {
             position: absolute;
             font-size: 18px;
@@ -128,7 +133,6 @@
         }
         section #profile {
             width: 40%;
-            padding-left: 10%;
             margin-top: 80px;
         }
         section #avatar {
@@ -157,7 +161,7 @@
         }
         /*个人经历*/
         #personal-experience .exper {
-            padding-left: 10%;
+            padding-left: 0%;
         }
         #personal-experience .exper div span {
             display: inline-block;
@@ -165,9 +169,6 @@
             line-height: 40px;
         }
         /*项目经验*/
-        #personal-project {
-            margin-left: 10%;
-        }
         #personal-project .project div .project-title {
             font-size: 32px;
         }
@@ -192,12 +193,11 @@
         }
     }
     
-    @media only screen and (max-width: 960px) {
+    @media screen and (min-width: 679px) {
         #header-name {
             position: absolute;
-            text-align: left;
-            left: 5%;
             font-weight: bold;
+            padding-left: 10%;
         }
         #header-contact {
             position: absolute;
@@ -238,7 +238,7 @@
         }
         /*个人经历*/
         #personal-experience .exper {
-            padding-left: 5%;
+            padding-left: 10%;
         }
         #personal-experience .exper div span {
             display: inline-block;
@@ -270,5 +270,65 @@
             height: 240px;
             background: #D8D8D8;
             right: 10%;
+        }
+    }
+    
+    @media screen and (max-width: 679px) {
+        header {
+            position: fixed;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        header #header-contact {
+            display: none;
+        }
+        #personal-info {
+            padding: 100px 20px 0px 20px;
+        }
+        #personal-info #avatar {
+            position: relative;
+            top: 60px;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            margin: 0px auto;
+            background: #D8D8D8;
+        }
+        #profile {
+            margin-top: 160px;
+        }
+        #profile #name {
+            text-align: center;
+            font-size: 20px;
+            line-height: 60px;
+            margin-bottom: 100px;
+        }
+        #profile-details a {
+            display: block;
+            margin-top: 40px;
+            text-decoration: none;
+            color: #0271C9;
+        }
+        #personal-experience {
+            padding-top: 0px;
+        }
+        #exper1 {
+            padding: 20px;
+            margin-top: 140px;
+        }
+        #exper2 {
+            padding: 20px;
+            margin-top: 160px;
+        }
+        #exper3 {
+            padding: 20px;
+            margin-top: 180px;
+        }
+        #personal-experience .exper .details {
+            position: absolute;
+            left: 0px;
+            margin-top: 55px;
+            margin-left: 20px
         }
     }
