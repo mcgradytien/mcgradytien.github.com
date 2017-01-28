@@ -42,7 +42,6 @@
         position: absolute;
         height: 100px;
         width: 100%;
-        top: 4600px;
         background-color: #ffffff;
     }
     
@@ -106,12 +105,8 @@
     }
     
     #personal-project .project {
+        position: absolute;
         width: 90%;
-    }
-    
-    #personal-project .project .project-details {
-        float: left;
-        width: 50%;
     }
     
     @media screen and (min-width: 960px) {
@@ -169,6 +164,10 @@
             line-height: 40px;
         }
         /*项目经验*/
+        #personal-project .project .project-details {
+            float: left;
+            width: 50%;
+        }
         #personal-project .project div .project-title {
             font-size: 32px;
         }
@@ -249,6 +248,10 @@
         #personal-project {
             margin-left: 5%;
         }
+        #personal-project .project .project-details {
+            float: left;
+            width: 50%;
+        }
         #personal-project .project div .project-title {
             font-size: 24px;
         }
@@ -303,6 +306,10 @@
             font-size: 20px;
             line-height: 60px;
             margin-bottom: 100px;
+            font-size: 28px;
+        }
+        #profile p{
+            font-size: 18px;
         }
         #profile-details a {
             display: block;
@@ -312,6 +319,10 @@
         }
         #personal-experience {
             padding-top: 0px;
+        }
+        #personal-experience .exper div span{
+            font-size: 18px;
+            height: 28px;
         }
         #exper1 {
             padding: 20px;
@@ -330,5 +341,40 @@
             left: 0px;
             margin-top: 55px;
             margin-left: 20px
+        }
+        #personal-project {
+            width: 90%;
+            margin-top: 200px;
+            position: absolute;
+            padding-left: 5%;
+        }
+        #personal-project .project .project-title{
+            font-size: 24px;
+        }
+        #personal-project .project div p{
+            font-size: 18px;
+        }
+        #project1 {
+            margin-top: 100px;
+            height: 600px;
+        }
+        #project2 {
+            margin-top: 700px;
+            height: 600px;
+        }
+        #project3 {
+            margin-top: 1300px;
+            height: 600px;
+        }
+        #personal-project .project .project-details {
+            float: left;
+        }
+        #personal-project .project .project-avatar {
+            width: 160px;
+            height: 160px;
+            background: #D8D8D8;
+            float: right;
+            margin-left: 60px;
+            margin-top: 30px;
         }
     }
