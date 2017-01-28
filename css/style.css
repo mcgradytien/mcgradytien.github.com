@@ -167,6 +167,7 @@
         #personal-project .project .project-details {
             float: left;
             width: 50%;
+            height: 1000px;
         }
         #personal-project .project div .project-title {
             font-size: 32px;
@@ -251,6 +252,7 @@
         #personal-project .project .project-details {
             float: left;
             width: 50%;
+            height: 1000px;
         }
         #personal-project .project div .project-title {
             font-size: 24px;
@@ -368,13 +370,13 @@
         }
         #personal-project .project .project-details {
             float: left;
+            width: 90%;
+        }
+        #personal-project .project .project-details textarea{
+            width: 90%;
+            height: 60px;
         }
         #personal-project .project .project-avatar {
-            width: 120px;
-            height: 120px;
-            background: #D8D8D8;
-            float: right;
-            margin-left: 60px;
-            margin-top: 30px;
+            display: none;
         }
     }
