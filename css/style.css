@@ -11,9 +11,9 @@
     
     body {
         margin: 0px;
-    }
+    } 
     
-    .sclearfix {
+    .clearfix {
         overflow: auto;
     }
     /* 公用样式 */
@@ -25,13 +25,32 @@
         position: fixed;
         z-index: 9999;
         background-color: #F7F7F7;
+        opacity: 0.9;
+        -moz-opacity:0.9;
+        -webkit-opacity:0.9;
     }
+    #header-blur{  
+    height: 80px;
+    width: 100%;
+    background: inherit;   
+    -webkit-filter: blur(10px);   
+    -moz-filter: blur(10px);   
+    -ms-filter: blur(10px);   
+    -o-filter: blur(10px);   
+    filter: blur(10px);   
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false); 
+} 
     
     #header-contact span img {
         width: 20px;
         margin: 0 15px -4px 15px;
     }
-    
+    #header-content{
+        position: relative;   
+        display: block; 
+        margin-top: -80px;
+    }
+
     section {
         position: absolute;
         height: 0px;
