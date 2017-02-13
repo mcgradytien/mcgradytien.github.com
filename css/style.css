@@ -11,8 +11,8 @@
     
     body {
         margin: 0px;
-        background: #fafafa;
-    } 
+        background: url(../imgs/tim-marshall.jpg);
+    }
     
     .clearfix {
         overflow: auto;
@@ -25,33 +25,36 @@
         width: 100%;
         position: fixed;
         z-index: 9999;
-        background-color: #FFF;
-        opacity: 0.9;
-        -moz-opacity:0.9;
-        -webkit-opacity:0.9;
+        background-color: #F7F7F7;
+        background-attachment: fixed;
+        opacity: 0.75;
+        -moz-opacity: 0.75;
+        -webkit-opacity: 0.75;
     }
-    #header-blur{  
-    height: 80px;
-    width: 100%;
-    background: inherit;   
-    -webkit-filter: blur(10px);   
-    -moz-filter: blur(10px);   
-    -ms-filter: blur(10px);   
-    -o-filter: blur(10px);   
-    filter: blur(10px);   
-    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false); 
-} 
+    
+    #header-blur {
+        height: 80px;
+        width: 100%;
+        background: inherit;
+        -webkit-filter: blur(add=true,direction=0,strength=15px); 
+        -moz-filter: blur(add=true,direction=0,strength=15px);
+        -ms-filter: blur(add=true,direction=0,strength=15px);
+        -o-filter: blur(add=true,direction=0,strength=15px);
+        filter: blur(add=true,direction=0,strength=15px);
+        filter: progid: DXImageTransform.Microsoft.Blur(PixelRadius=4, MakeShadow=false);
+    }
     
     #header-contact span img {
         width: 20px;
         margin: 0 15px -4px 15px;
     }
-    #header-content{
-        position: relative;   
-        display: block; 
+    
+    #header-content {
+        position: relative;
+        display: block;
         margin-top: -80px;
     }
-
+    
     section {
         position: absolute;
         height: 0px;
@@ -330,7 +333,7 @@
             margin-bottom: 100px;
             font-size: 28px;
         }
-        #profile p{
+        #profile p {
             font-size: 18px;
         }
         #profile-details a {
@@ -342,7 +345,7 @@
         #personal-experience {
             padding-top: 0px;
         }
-        #personal-experience .exper div span{
+        #personal-experience .exper div span {
             font-size: 18px;
             height: 28px;
         }
@@ -370,10 +373,10 @@
             position: absolute;
             padding-left: 5%;
         }
-        #personal-project .project .project-title{
+        #personal-project .project .project-title {
             font-size: 24px;
         }
-        #personal-project .project div p{
+        #personal-project .project div p {
             font-size: 18px;
         }
         #project1 {
@@ -392,7 +395,7 @@
             float: left;
             width: 90%;
         }
-        #personal-project .project .project-details textarea{
+        #personal-project .project .project-details textarea {
             width: 90%;
             height: 60px;
         }
